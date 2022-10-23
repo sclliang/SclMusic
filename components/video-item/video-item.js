@@ -18,5 +18,14 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {},
+  methods: {
+    /*
+      item点击事件，跳转mv详情页面
+     */
+    onItemClick(){
+      wx.navigateTo({
+        url:'/subpkg/detail-video/detail-video?id='+this.properties.itemData.id
+      })
+    }
+  },
 });

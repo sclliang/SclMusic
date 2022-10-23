@@ -8,7 +8,7 @@ function request({ url, method = "GET", data }) {
       method,
       timeout: 10000,
       success: (res) => {
-        resolve(res);
+        resolve(res.data);
       },
       fail: (err) => {
         reject(err);

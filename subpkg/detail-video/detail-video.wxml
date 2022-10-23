@@ -1,0 +1,33 @@
+<wxs module="format" src="/utils/format.wxs"></wxs>
+<video class="video" autoplay src="{{mvUrl}}"></video>
+
+<view class="mv-info" wx:if="{{mvData}}">
+    <view class="userinfo" >
+        <text class="title">{{mvData.name}}</text>
+        <text class="user">{{mvData.artistName}}</text>
+        <text class="user">{{format.formatCount(mvData.playCount)}}次播放 - {{mvData.publishTime}}</text>
+    </view>
+    <view class="related">
+        <view class="related-title"><text>推荐视频</text></view>
+        <view class="related-video">
+            <block wx:for="{{RelatedVideoList}}" wx:key="index">
+                <view class="relater-video-item">
+                    <view class="bg">
+                        <image mode="widthFix" src="{{item.coverUrl}}"></image>
+                        <view class="play-count">
+
+                            <text class="count">{{format.formatCount(item.durationms)}}</text>
+                        </view>
+                    </view>
+                    <view class="video-info">
+                        <view class="video-title">{{item.title}}</view>
+                        <view class="nickname">{{item.creator[0].userName}}</view>
+                    </view>
+                </view>
+
+            </block>
+        </view>
+    </view>
+
+
+</view>

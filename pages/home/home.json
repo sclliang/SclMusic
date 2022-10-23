@@ -1,5 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+  },
   "navigationBarTitleText": "音乐馆",
   "navigationBarBackgroundColor": "#73c991"
 }

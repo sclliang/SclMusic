@@ -1,2 +1,6 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="video-container">
+  <block wx:for="{{mvListData}}" wx:key="id">
+    <video-item itemData="{{item}}"></video-item>
+  </block>
+</view>

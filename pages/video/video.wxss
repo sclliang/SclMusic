@@ -1,1 +1,21 @@
 /* pages/video/video.wxss */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.video-box {
+  margin: 18rpx;
+}
+.video-info {
+  width: 45vw;
+}
+.mv-pic {
+  width: 100%;
+}
+.avatar-info {
+  font-size: 24rpx;
+  width: 45vw;
+  white-space: nowrap;
+  overflow: hidden;
+}

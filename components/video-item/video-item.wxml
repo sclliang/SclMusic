@@ -1,6 +1,12 @@
-<view class="video-box">
+
+<wxs module="format" src="/utils/format.wxs"></wxs>
+<view class="video-box" bindtap="onItemClick">
       <view class="video-info">
         <image mode="widthFix" class="mv-pic" src="{{itemData.cover}}"></image>
+          <view class="info">
+              <view class="count">{{format.formatCount(itemData.playCount)}}</view>
+              <view>{{format.formatTime(itemData.mv.videos[0].duration/1000)}}</view>
+          </view>
       </view>
       <view class="avatar-info">{{itemData.name}}-{{itemData.artistName}}</view>
     </view>

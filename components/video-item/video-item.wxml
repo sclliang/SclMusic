@@ -1,0 +1,6 @@
+<view class="video-box">
+      <view class="video-info">
+        <image mode="widthFix" class="mv-pic" src="{{itemData.cover}}"></image>
+      </view>
+      <view class="avatar-info">{{itemData.name}}-{{itemData.artistName}}</view>
+    </view>

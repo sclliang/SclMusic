@@ -1,0 +1,16 @@
+/* components/video-item/video-item.wxss */
+.video-box {
+  margin: 18rpx;
+}
+.video-info {
+  width: 45vw;
+}
+.mv-pic {
+  width: 100%;
+}
+.avatar-info {
+  font-size: 24rpx;
+  width: 45vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
